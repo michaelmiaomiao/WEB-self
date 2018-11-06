@@ -1,0 +1,376 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Michael Miao's Page</title>
+</head>
+<body>
+	<h1>Welcome to Michael Miao's First Page.</h1>
+
+	<img src="https://luskinconferencecenter.ucla.edu/wp-content/uploads/2017/09/About_CampusToursVisits_BANNER_768x330.jpg" height="300" width="980"><br/>
+
+
+	<!--<img src="https://tethys.pnnl.gov/sites/default/files/styles/large/public/taxonomy-images/ucla-logo.png?itok=nnURPHU5" height="200" width="480"><br/> -->
+
+	
+	<h2>What do you think is your favourite <strong>Pokemon</strong> ?</h2>
+
+	<table border="1">
+		<tr>
+			<th>Name</th>
+		 	<th>Image</th>
+		 	<th>type</th>
+		 	<th>evolves info</th>
+		</tr>
+		<tr>
+		<td>Charmander</td>	
+		<td><img src="http://img4.wikia.nocookie.net/__cb20140724195345/pokemon/images/thumb/7/73/004Charmander.png/200px-004Charmander.png" alt="conan" height="200">
+		</td>
+		<td>Fire</td>
+		<td><a href="http://pokemon.wikia.com/wiki/Charmeleon 
+		">Charmeleon</a> </td>
+
+		</tr>
+		<tr>
+		<td>Bulbasaur</td>	
+		<td><img src="http://img4.wikia.nocookie.net/__cb20140328190757/pokemon/images/thumb/2/21/001Bulbasaur.png/200px-001Bulbasaur.png" alt="conan" height="200">
+		</td>
+		<td>Grass/Poison</td>
+		<td><a href="http://pokemon.wikia.com/wiki/Ivysaur ">Ivysaur</a>
+		</td>
+		</tr>
+
+
+		<tr>
+		<td>Squirtle</td>	
+		<td><img src="http://img1.wikia.nocookie.net/__cb20140328191525/pokemon/images/thumb/3/39/007Squirtle.png/200px-007Squirtle.png
+		" alt="conan" height="200">
+		</td>
+		<td>Water</td>
+		<td><a href="http://pokemon.wikia.com/wiki/Wartortle">Wartortle</a>
+			
+			 </td>
+			
+
+
+
+		</tr>
+
+
+	</table>
+
+
+	<h2>Sign In</h2>
+
+	<!--<form action="/sign-in-url" method="post">
+		<input type="text">	
+		<input type="password">
+		<button>Login</button>
+
+	</form> -->
+	<!-- action - where the form send data to -->
+	<!-- method - what http method get post -->
+
+
+	<!--<form action="http://wikipedia.com" method="get"> -->
+		
+
+	<!--<form>
+
+
+		<label>
+			Username:
+			<input name= "username" type="text" placeholder="Username">
+
+		</label>
+		<label>
+			Passord:
+			 <input name="password" type="password" placeholder="Passoword">
+
+		</label>
+		
+		
+		<button>submit</button>
+		<input type="submit" name="">
+
+
+	</form>-->
+
+
+	<form action="http://wikipedia.org" method="get">
+
+
+		<label for="username">Username:</label>
+		<input id="username" name= "email" type="email" placeholder="email" required>
+		<label for="password">Passord:</label>
+		<input id="password" name="password" type="password" placeholder="Passoword" autocomplete="on"  min="5" max="10" size="8" >
+
+		<!--now the data are connected by using for and id at label and input   -->
+		
+		
+		<button>submit</button>
+		<!--<input type="submit" name="">-->
+
+
+	</form>
+
+	
+
+	<form>
+		<p>Do you prefer cats or dogs?</p>
+		
+		<label for="dogs">Dogs: </label>
+		<input name="petchoice" id="dogs" type="radio" value="DOGS">
+		<label for="cats">Cats: </label>
+		<input name="petchoice" id="cats" type="radio" value="CATS">
+
+		<p>What is your favorite color?</p>
+
+		<select name="color">
+			<option>Red</option>
+			<option>Orange</option>
+			<option>Yellow</option>
+			<option>Black</option>
+			<option>White</option>
+
+		</select>
+
+		<p>What is your current mood?</p>
+
+		<select name="mood">
+			<option value="happy">:)      </option>
+			<option value="neutral">:|      </option>
+			<option value="sad">:(      </option>
+			
+		</select>
+
+
+		<p><textarea name="paragraph" rows="10" cols="50">
+			
+		</textarea> </p>
+	    <!--
+
+	    	too make more lines than one line "text"
+
+
+	    -->
+
+		<button> Go! </button>
+
+
+
+	</form>
+	<p>
+
+	<h1>Register</h1>
+
+	<form>
+		<label for="firstname">Fist Name: </label>
+		<input id="firstname" type="text" name="firstname" placeholder="John" required=>
+		<label for="lastname">Last Name: </label>
+		<input id="lastname" type="text" name="lastname" placeholder="Smith" required >
+		<br/>
+
+
+		<label for="male">Male</label>
+		<input id="male" type="radio" name="sex" value="male">
+		<label for="female">Female</label>
+		<input id="female" type="radio" name="sex" value="female">
+		<label for="other">Other</label>
+		<input id="other" type="radio" name="sex" value="other">
+		<br/>
+
+
+		<label for="email">Email: </label>	
+		<input id="email" type="email" name="Email" placeholder="email" required>
+		<label for="password">Password: </label>
+		<input id="password" type="password" name="Password" placeholder="password" pattern=".{5,10}" required title="Password must be betweeen 5 to 10 characters">
+
+		<br/>
+
+		<!--   you can use <div> to start another line
+
+		-->
+
+		<label>Birthday: </label>
+		<select name="BirthdayMonth">
+
+				<option value="0">Month</option>
+				<option value="1">January</option>
+				<option value="2">February</option>
+				<option value="3">March</option>
+				<option value="4">April</option>
+				<option value="5">May</option>
+				<option value="6">June</option>
+				<option value="7">July</option>
+				<option value="8">August</option>
+				<option value="9">September</option>
+				<option value="10">October</option>
+				<option value="11">November</option>
+				<option value="12">December</option>
+
+				
+				
+		</select>
+
+		<select name="BirthdayDay">
+
+				<option value="0">Day</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="21">21</option>
+				<option value="22">22</option>
+				<option value="23">23</option>
+				<option value="24">24</option>
+				<option value="25">25</option>
+				<option value="26">26</option>
+				<option value="27">27</option>
+				<option value="28">28</option>
+				<option value="29">29</option>
+				<option value="30">30</option>
+				<option value="31">31</option>
+		</select>
+
+		<select name="BirthdayYear">
+
+				<option value="-9">Year</option>
+				<option value="-8">1976</option>
+				<option value="-7">1977</option>
+				<option value="-6">1978</option>
+				<option value="-5">1979</option>
+				<option value="-4">1980</option>
+				<option value="-3">1981</option>
+				<option value="-2">1982</option>
+				<option value="-1">1983</option>
+				<option value="0">1984</option>
+				<option value="1">1985</option>
+				<option value="2">1986</option>
+				<option value="3">1987</option>
+				<option value="4">1988</option>
+				<option value="5">1989</option>
+				<option value="6">1990</option>
+				<option value="7">1991</option>
+				<option value="8">1992</option>
+				<option value="9">1993</option>
+				<option value="10">1994</option>
+				<option value="11">1995</option>
+				<option value="12">1996</option>
+				<option value="13">1997</option>
+				<option value="14">1998</option>
+				<option value="15">1999</option>
+				<option value="16">2000</option>
+				<option value="17">2001</option>
+				<option value="18">2002</option>
+				<option value="19">2003</option>
+				<option value="20">2004</option>
+				<option value="21">2005</option>
+				<option value="22">2006</option>
+				<option value="23">2007</option>
+				<option value="24">2008</option>
+				<option value="25">2009</option>
+				<option value="26">2010</option>
+				<option value="27">2011</option>
+				<option value="28">2012</option>
+				<option value="29">2013</option>
+				<option value="30">2014</option>
+				<option value="31">2015</option>
+				<option value="32">2016</option>
+				<option value="33">2017</option>
+				<option value="34">2018</option>
+		</select>
+		<br/>
+
+
+		   <label for="terms">I agree to the terms and conditions </label>
+		<input id="terms" type="checkbox" name="terms">
+		<br/>
+		<button>Submit</button>
+
+
+
+
+</p>
+</form>
+
+
+	<!--   
+
+		by puting same name of the input, you can only pick one when doing the radio type
+
+	<input type= "checkbox">
+	-->
+
+
+
+	<!--
+	<input type="color">
+	<input type="radio">-->
+
+
+		
+
+</body>
+</html>
+
+<b> </b>
+<p><strong></strong>
+</p>
+
+<ol>      
+
+	<img src="https://b-ssl.duitang.com/uploads/item/201605/08/20160508175335_Bz4Sy.jpeg" alt="conan" height="200">
+	
+
+	<img src="https://assetsprx.matchesfashion.com/img/product/131/1188091_1.jpg" height="200">
+
+	<li><p><a href="http://www.google.com">Click me to go to google</a> </p></li>
+	<li><p> <a href="https://getbootstrap.com">Click here to go to Bootstrap</a> </p></li>
+	<li><p><a href="https://my.ucla.edu">Click here to go to Myucla!!</a></p></li>
+	<li><p><a href="https://www.linkedin.com/in/jiashu-miao-12b861b9/">Click here to get to know me on Likedin.</a></p></li>
+
+	<li><p>Make sure to follow me on  <a href="https://www.instagram.com/michaelmiaomiao/"> Instagram</a></p></li>
+
+	<li><p><a href="https://www.farfetch.com/shopping/men/designer-givenchy/items.aspx?category=136361">Click me to buy a pair of Givenchy sneakers</a> </p></li>
+
+
+</ol>
+
+<p>Be slow to promise and quick to perform.</p>
+
+
+
+
+
+<ul>
+	
+
+<li></li>
+<ul><li><strong> Copyright Michael Miao</strong></li>
+<li>
+May 20th 2018</li>
+</ul>
+<li></li>
+
+</ul>
+
+<dir></dir>
+<span></span>
